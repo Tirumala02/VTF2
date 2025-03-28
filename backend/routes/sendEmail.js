@@ -67,7 +67,7 @@ router.post('/send-email', async (req, res) => {
 
         // Send email to customer
         await transporter.sendMail({
-            from: `"Shop Name" <${process.env.EMAIL_USER}>`,
+            from: `"VT Fashions" <${process.env.EMAIL_USER}>`,
             to: customerEmail,
             subject: "Your Order Confirmation",
             html: emailTemplate
@@ -75,7 +75,7 @@ router.post('/send-email', async (req, res) => {
 
         // Send email to admin
         await transporter.sendMail({
-            from: `"Shop Name" <${process.env.EMAIL_USER}>`,
+            from: `"VT Fashions" <${process.env.EMAIL_USER}>`,
             to: adminEmail,
             subject: "New Order Received",
             html: emailTemplate
