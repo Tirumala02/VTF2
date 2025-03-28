@@ -8,8 +8,10 @@ const Footer = () => {
 
         <div>
             <div className='flex items-center gap-2'>
-                <img src={ecomlogo} alt='VT Fashions Logo' className="h-12 mb-3" /> {/* Updated Logo */}
-                <h1 className="text-xl font-bold text-[#283593]">VT Fashions</h1>
+                <img src={ecomlogo} alt='VT Fashions Logo' className="h-10 sm:h-12 lg:h-14" /> {/* Updated Logo */}
+                                <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-wide text-[#283593] font-[Montserrat]">
+                                    VT <span className="text-[#D50000]">Fashions</span>
+                                </h1>
             </div>
             <p className='w-full md:w-2/3 text-gray-600'>
                 Elevate your style with our latest fashion trends. At VT Fashions, we bring you the perfect blend of elegance, quality, and comfort. Discover a wide range of apparel curated just for you.
