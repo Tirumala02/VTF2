@@ -13,7 +13,7 @@ router.post('/send-email', async (req, res) => {
     // Define email content
     const { address, items, amount } = orderData;
     const customerEmail = orderData.email;
-    const adminEmail = "anub0709@gmail.com"; // Replace with actual admin email
+    const adminEmail = "dressfashiond@gmail.com"; // Replace with actual admin email
 
     // Order Summary HTML Template
     const emailTemplate = `
